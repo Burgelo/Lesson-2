@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-4</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title">Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).
+		</h3>		
+ 	</div>
+	<script>
+		let price = parseFloat(prompt("Вартість одиниці товаруб ₴"))
+		let quantityGoods = parseInt(prompt("Кількість товару, шт"))
+		const tax = 0.05
+		let totalAmount = price * quantityGoods
+		let taxAmount = totalAmount * 0.05
+		
+		document.write(`Загальна вартість ${totalAmount.toFixed(2)}₴,<br> ПДВ ${taxAmount.toFixed(2)}₴`)      
+	</script>
+</body>
+</html>

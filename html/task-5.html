@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-5</title>
+</head>
+<body>
+	<div class="task__blok">
+		<h3 class="task__title">Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</h3>		
+ 	</div>
+	<script>		
+		const m = 0.01
+		const km = 1e-5
+		let width = parseFloat(prompt("Введіть довжину у сантиметрах"))
+		let widthMeter = width * m
+		let widthKm = width * km
+		document.write(`Довжина ${width}см дорівнює  ${widthMeter.toFixed(2)} метрів і  ${widthKm.toFixed(5)} кілометрів`)
+	</script>
+</body>
+</html>

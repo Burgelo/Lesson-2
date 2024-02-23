@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-9</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title">Користувач хоче клеїти шпалери на стіну. Дано розміри стіни (довжина і висота) та
+			розмір двох вікон. Визначити, скільки м2 шпалер потрібно купити користувачу.</h3>		
+ 	</div>
+	<script>
+		numberWidth = parseFloat(prompt('Висота стіни, м'))
+		numberHeight = parseFloat(prompt('Довжина стіни, м'))
+		numberWidthWindow = parseFloat(prompt('Висота вікна, м'))
+		numberHeightWindow = parseFloat(prompt('Довжина вікна, м'))
+		let areaWall = numberWidth * numberHeight
+		let areaWindow = numberWidthWindow * numberHeightWindow * 2
+		let units = areaWall - areaWindow 
+		document.write(`Вам потрібно купити ${units} м2 шпалер`)
+	</script>
+</body>
+</html>

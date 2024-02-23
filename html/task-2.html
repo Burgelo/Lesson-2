@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task2</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title">Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+			.</h3>		
+ 	</div>
+	<script>
+
+   let numberOne = parseFloat(prompt("Введіть любе дійсне число"))
+   let numberTwo = parseFloat(prompt("Введіть любе дійсне число"))
+
+   let totalPlus = numberOne + numberTwo
+   let totalMultiplication = numberOne * numberTwo
+   let totalDivision = numberOne / numberTwo
+
+   document.write(` Числа : ${numberOne} і ${numberTwo}`)
+   document.write("<table border='1'>");
+	document.write("<tr><th>Операція</th><th>Результат</th></tr>");
+	document.write("<tr><td>Сума</td><td>"+ totalPlus + "</td></tr>");
+	document.write("<tr><td>Добуток</td><td>" + totalMultiplication + "</td></tr>");
+	document.write("<tr><td>Частка</td><td>" + totalDivision.toFixed(2) + "</td></tr>");
+	document.write("</table>");
+	</script>
+</body>
+</html>

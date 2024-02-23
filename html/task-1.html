@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-1</title>
+</head>
+<body>  
+ 
+	<div class="task__blok">
+		<h3 class="task__title">Обчислити значення виразів</h3>
+		<p>S1 = a + 12 + b</p>
+		<p>S2 = sqrt((a + b) / 2a)</p>
+		<p>S3 = cbrt(a + b)c</p>
+      <p>S4 = sin⁡(a / (-b))  </p>
+ 	</div>
+	<script>    
+		let numberOne = parseInt(prompt("Ввевіть ціле число", "0"))
+      let numberTwo = parseInt(prompt("Ввевіть ціле число", "0"))
+      let numberTwoNegativ = parseInt(prompt("Ввевіть ціле число, яке отримає знак -", "0"))
+      let numberThree = parseFloat(prompt("Ввевіть ціле число", "0"))
+      const numberFree = 12
+//S1 = a + 12 + b      
+      let resultOne = numberOne + numberFree+ numberTwo
+//S2 = sqrt((a + b) / 2a) a+b  2*a  
+      let secondActionOne = numberOne + numberTwo
+      let secondActionTwo = 2 * numberOne
+      let resultTwo = Math.sqrt(secondActionOne / secondActionTwo)       
+//S3 = cbrt(a + b)c
+      let thirdActionOne = numberOne + numberTwo
+      let resultTree = Math.cbrt (thirdActionOne * numberThree)
+//S4=sin⁡(a / (-b))
+      let fourthActionOne = (numberOne /numberTwoNegativ )
+      let resultFour = Math.sin(fourthActionOne)
+
+      document.write(`<p>Ваші цифри: a = ${numberOne}, b = ${numberTwo}, c = ${numberThree}</p>         
+         <p>відповідь S1 = ${resultOne.toFixed(2)}</p>         
+         <p>відповідь S2 = ${resultTwo.toFixed(2)}</p>         
+         <p>вiдпoвiдь S3 = ${resultTree.toFixed(2)}</p>         
+         <p>вiдпoвiдь S3 = ${resultFour.toFixed(2)}</p>`)
+	</script>
+</body>
+</html>

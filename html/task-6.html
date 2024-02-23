@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task-6</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title">Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</h3>		
+ 	</div>
+	<script>
+		const minutes = 60
+		const hour = 3600
+		let numberSeconds = parseInt(prompt("Кількість секунд"))
+		let timeMinutes = numberSeconds / minutes
+      let timeHours = numberSeconds / hour
+		document.write(`Це ${timeMinutes.toFixed(2)} хвилин і ${timeHours.toFixed(2)} годин `)
+	</script>
+</body>
+</html>

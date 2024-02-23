@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>task-7</title>
+</head>
+<body>	
+	<div class="task__blok">
+		<h3 class="task__title"> З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</h3>		
+ 	</div>
+	
+	<script>
+		let goodsOne = parseInt(prompt("Введіть кількість товару, шт"))
+		let priceOne = parseFloat(prompt("Введіть ціну першого товару, грн"))
+
+		let goodsTwo = parseInt(prompt("Введіть кількість товару, кг"))
+		let priceTwo = parseFloat(prompt("Введіть ціну другого товару, грн"))
+
+		let goodsThree = parseInt(prompt("Введіть кількість товару, кг"))		
+		let priceThree = parseFloat(prompt("Введіть ціну третього товару, грн"))
+
+		let totalRriceOne = goodsOne * priceOne
+		let totalRriceTwo = goodsTwo * priceTwo
+		let totalRriceThree = goodsThree * priceThree
+		let total = totalRriceOne + totalRriceTwo + totalRriceThree
+		   document.write(`<p>Товарний чек</p>`)
+		   document.write(`<table border='1'>`)
+			document.write(`	
+				<tr>
+		         <th>Назва товару</th>
+		         <th>Кількість</th>					
+		         <th>Ціна товару</th>
+					<th>Сума за товар</th>
+		      </tr>`)	
+				document.write(`
+				<tr>	
+		       <th>Перший товар</th>
+		       <th>${goodsOne}шт</th>
+		       <th>${priceOne.toFixed(2)} грн</th>
+				 <th>${totalRriceOne.toFixed(2)} грн</th>
+		      </tr>
+				`)
+				document.write(`
+				<tr>	
+		       <th>Другий товар</th>
+		       <th>${goodsTwo}кг</th>
+		       <th>${priceTwo.toFixed(2)} грн</th>
+				 <th>${totalRriceTwo.toFixed(2)} грн</th>
+		      </tr>
+				`)
+				document.write(`
+				<tr>	
+		       <th>Третій товар</th>
+		       <th>${goodsThree}кг</th>
+		       <th>${priceThree.toFixed(2)} грн</th>
+				 <th>${totalRriceThree.toFixed(2)} грн</th>
+		      </tr>
+				`)	
+				document.write(`
+				<tr>	
+		       <th>Зазальна сума</th>
+		       <th></th>
+		       <th></th>
+				 <th>${total.toFixed(2)} грн</th>
+		      </tr>
+				`)		
+	</script>
+	
+	</table>
+</body>
+</html>
